@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import qr from '../img/image-qr-code.png';
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="h-screen overflow-hidden grid place-content-center">
+		<div class="bg-white w-80 flex flex-col gap-4 rounded-2xl p-4 text-center">
+			<picture class="pb-2">
+				<img src={qr} alt="QR" class="overflow-hidden rounded-xl">
+			</picture>
+			<h1 class="font-bold text-2xl">Improve your front-end skills by building projects</h1>
+			<p class="text-gray-500 pb-4">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+		</div>
+	</main>
+</Layout>
+
+
+<style>
+	body {
+		background-color: #d5e1ef;
+	}
+</style>
